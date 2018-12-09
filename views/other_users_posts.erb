@@ -1,0 +1,21 @@
+<div class="row user-profile">
+  <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
+    <h1 class="user-profile-h1"><%= @user.username %></h1>
+    <% @user.posts.all.reverse.each do |post| %>
+      <div class="card horizontal valign-wrapper">
+        <div class="card-image hide-on-small-only">
+          <% if @user.image_url %>
+            <img src="<%= @user.image_url %>">
+          <% end %>
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <h3><i class="material-icons post-icon">title :</i><%= post.title %></h3>
+            <h5><i class="material-icons post-icon">account_circle :</i><%= @user.username %></h5>
+            <h5><i class="material-icons post-icon">message :</i><%= post.content %></h5>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

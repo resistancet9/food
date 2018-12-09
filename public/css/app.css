@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+html,
+body {
+  font-family: 'Do Hyeon', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  letter-spacing: 1px;
+}
+
+
+
+
+/*------------------------- Navbar -------------------------*/
+
+.row {
+  margin: 0;
+}
+
+.nav-wrapper {
+  background-image: url("../images/space.png");
+}
+
+.nav-wrapper a {
+  color: #F9FF00;
+}
+
+.sidenav li>a {
+  color: #F9FF00;
+}
+
+.star-wars-logo {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+/*--------------------------------- Buttons ---------------------------*/
+
+#home-btn {
+  background-color: #F9FF00;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#profile-btn {
+  background-color: #81d4fa;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#create-post-btn {
+  background-color: #D0FCFD;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#sign-up-btn {
+  background-clip: #00BC4E;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#sign-in-btn {
+  background-color: #C2E1E9;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#settings-btn {
+  background-color: #ff9100;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+/*--------------------------------- Landing-Page ---------------------------*/
+
+.landing-page {
+  background-image: url("../images/darth-vader-background.jpg");
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.landing-page h1 {
+  margin-top: 200px;
+  color: #0091E3;
+}
+
+/*------------------------------------ Sign-In ------------------------------------*/
+
+
+#user_name,
+#_password {
+  color: #C2E1E9;
+}
+
+#user_name:focus,
+#_password:focus {
+  border-bottom: 1px solid #C2E1E9;
+  box-shadow: #C2E1E9;
+}
+
+.sign-in-page {
+  background-image: url("../images/storm-trooper-background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.sign-in-h4 {
+  margin-top: 180px;
+  border-bottom: 1px solid #CAE1E9;
+  padding-bottom: 5px;
+  color: #CAE1E9;
+}
+
+.sign-in-link:link,
+.sign-in-link:visited {
+  font-size: 150%;
+  padding-bottom: 5px;
+  transition: border 0.2s;
+}
+
+.sign-in-link:hover,
+.sign-in-link:active {
+  border-bottom: 2px solid #0091E3;  
+}
+
+.darth-vader-icon {
+  margin-right: 30px;
+}
+
+/*------------------------------- Sign-Up -----------------------------------*/
+
+.sign-up-page {
+  background-image: url("../images/yoda-background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.sign-up-page h1 {
+  margin-top: 200px;
+  color: #4caf50;
+}
+
+
+.sign-up-form>#first_name:focus,
+#last_name:focus,
+#username:focus,
+#password:focus,
+#email:focus,
+#image_url,
+#birthday:focus {
+  border-bottom: 1px solid #00BC4E;
+  box-shadow: 0 1px 0 0 #00BC4E;
+}
+
+.sign-up-form>#first_name,
+#last_name,
+#username,
+#password,
+#email,
+#image_url,
+#birthday {
+  color:#00BC4E;
+}
+
+.go-to-sign-in-link:link,
+.go-to-sign-in-link:visited {
+  font-size: 150%;
+  padding-bottom: 5px;
+  transition: border 0.2s;
+  color: #00BC4E;
+}
+
+.go-to-sign-in-link:hover,
+.go-to-sign-in-link:active {
+  border-bottom: 2px solid #00BC4E;  
+}
+
+/*------------------------------ Create-Post ------------------------------------*/
+
+#title,
+#content {
+  color: #D0FCFD;
+}
+
+.create-post-page {
+  background-image: url("../images/millennium-falcon.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.create-post-page h4 {
+  color: #D0FCFD;
+  margin-top: 200px;
+  border-bottom: 1px solid #D0FCFD;
+}
+
+#title:focus,
+#content:focus {
+  border-bottom: 1px solid #D0FCFD;
+  box-shadow: 0 1px 0 0 #D0FCFD;
+}
+
+.row .input-field input:focus {
+  border-bottom: 1px solid #D0D0D0 !important;
+  box-shadow: 0 1px 0 0 #D0D0D0 !important
+}
+
+.sign-up-link:hover,
+.sign-up-link:active {
+  border-bottom: 2px solid #0091E3;  
+}
+
+.go-to-sign-up-link:link,
+.go-to-sign-up-link:visited {
+  font-size: 150%;
+  padding-bottom: 5px;
+  transition: border 0.2s;
+  color: #C2E1E9;
+}
+
+.go-to-sign-up-link:hover,
+.go-to-sign-up-link:active {
+  border-bottom: 2px solid #C2E1E9;  
+}
+
+
+/*--------------------------- Signed-In Home-Page --------------------------------*/
+
+
+.home-page {
+  background-image: url("../images/Rogue-One-Death-Star.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+h1 {
+  margin-top: 50px;
+  color: #F9FF00;
+}
+
+.sign-up-link:link,
+.sign-up-link:visited {
+  font-size: 150%;
+  margin-left: 35px;
+  padding-bottom: 5px;
+  transition: border 0.2s;
+}
+
+.username-link:link,
+.username-link:visited {
+  font-size: 100%;
+  padding-bottom: 2px;
+  transition: border 0.2s;
+  color: #F9FF00;
+}
+
+.username-link:hover,
+.username-link:active {
+  border-bottom: 2px solid #F9FF00;  
+}
+
+.home-page-h3 {
+  color: #F9FF00;
+  border-bottom: 1px solid #F9FF00;
+}
+
+#home_title,
+#home_content {
+  color: #F9FF00;
+}
+
+#home_title:focus,
+#home_content:focus {
+  border-bottom: 1px solid  #F9FF00;
+  box-shadow: 0 1px 0 0 #F9FF00;
+}
+
+
+/* ----------------------------- Profile --------------------------------------- */
+
+.profile {
+  background-image: url("../images/duel.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.profile-h1 {
+  color: #81d4fa;
+}
+
+.profile-h3 {
+  color: #ef5350;
+  border-bottom: 1px solid #81d4fa;
+}
+
+#profile_title,
+#profile_content {
+  color: #ef5350;
+}
+
+#profile_title:focus,
+#profile_content:focus {
+  border-bottom: 1px solid  #81d4fa;
+  box-shadow: 0 1px 0 0 #81d4fa;
+}
+
+/* --------------------------- Other Users Posts ------------------------------ */
+
+.user-profile {
+  background-image: url("../images/duel.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.user-profile-h1 {
+  color: #81d4fa;
+}
+
+
+
+
+/* --------------------------- Settings-Page ----------------------------------- */
+
+.settings-page {
+  background-image: url("../images/bb8.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.settings-h4 {
+  color: #ff9100;
+  border-bottom: 1px solid #ff9100;
+  margin-top: 50px;
+}
+
+
+.input-field>label {
+  color: #F6FFFE;
+}
+
+#settings_first_name:focus,
+#settings_last_name:focus,
+#settings_username:focus,
+#settings_password:focus,
+#settings_email:focus,
+#settings_image_url {
+  border-bottom: 1px solid #ff9100;
+  box-shadow: 0 1px 0 0 #ff9100;
+}
+
+#settings_first_name,
+#settings_last_name,
+#settings_username,
+#settings_password,
+#settings_email,
+#settings_image_url {
+  color:#F6FFFE;
+}
+
+label {
+  color: #ff9100;
+  font-size: 100%;
+}
+
+
+/* ---------------------------- Card ---------------------------------- */
+
+.card:first-child {
+  margin-top: 20px;
+}
+
+.card {
+  background-image: url("../images/space.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  margin-top: 50px;
+  padding: 0 5% 0 10%;
+  border-radius: 20px;
+}
+
+.card.horizontal .card-image img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.card-content {
+  color: #FEF300;
+  margin-left: 50px;
+}
+
+h3,
+h4,
+h5 {
+  margin: 5px 0px;
+  padding-bottom: 5px;
+}
+
+.post-icon {
+  margin-right: 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ---------------------------- Flash Info ----------------------------- */
+
+
+.flash {
+  border-radius: 2px;
+  padding: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.flash.info {
+  background-color: #00BC4E;
+}
+
+.flash.warning {
+  background-color: #ef5350;
+}
+
+.flash a, .flash a:link, .flash a:active, .flash a:visited {
+  position: absolute;
+  right: 20px;
+  text-decoration:  none;
+  color: black;
+  animation: beckon;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.flash a:hover {
+  color: white;
+}
+
+.flash.hide {
+  display: none;
+}
+
+@keyframes beckon {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.3);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Small phones: from 0 to 480px */
+@media (max-width: 480px) {
+  .card {
+    margin-top: 50px;
+    padding: 0 5%;
+    border-radius: 20px;
+  }
+
+  .card-content {
+    color: #FEF300;
+    margin-left: 0;
+  }
+
+  .card-content>h3 {
+    font-size: 100%;
+  }
+
+  .card-content>h4 {
+    font-size: 90%;
+  }
+
+  .card-content>h5 {
+    font-size: 80%;
+  }
+
+  .home-page-h1 {
+    font-size: 40px;
+  }
+
+  .profile-h1 {
+    font-size: 40px;
+  }
+
+  .home-page-h3 {
+    font-size: 30px;
+  }
+
+  .profile-h3 {
+    font-size: 30px;
+  }
+
+  .landing-page h1 {
+    margin-top: 50px;
+    color: #0091E3;
+  }
+
+  .sign-up-page h1 {
+    margin-top: 50px;
+    color: #4caf50;
+  }
+
+  .sign-in-h4 {
+    margin-top: 80px;
+  }
+
+  .landing-page {
+    overflow-y: scroll;
+  }
+
+  .sign-up-page {
+    overflow-y: scroll;
+  }
+
+
+  .sign-in-page {
+    overflow-y: scroll;
+  }
+
+  .create-post-page {
+    overflow-y: scroll;
+  }
+
+  .home-page {
+    overflow-y: scroll;
+  }
+
+  .profile {
+    overflow-y: scroll;
+  }
+
+  .user-profile {
+    overflow-y: scroll;
+  }
+
+  .settings-page {
+    overflow-y: scroll;
+  }
+
+}
+

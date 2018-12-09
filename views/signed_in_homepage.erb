@@ -1,27 +1,31 @@
+<style>
+  body {
+    background-image: url("/images/bg2.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+</style>
 <div class="row home-page">
   <div class="col s10 offset-s1 m10 offset-m1 l6 offset-l3">
-    <h1 class="home-page-h1">May the force be with you <%= @user.username %></h1>
-    <h3 class="home-page-h3">Create Post</h3>
-    <form action="/" method="post">
-      <input type="text" name="title" id="home_title" placeholder="Title" required>
-      <input type="text" name="content" id="home_content" placeholder="Write Post Here" required>
-      <input id="home-btn" type="submit" value="Go">
-    </form>
+  <h1 class="white-black">Home</h1>
     <% @posts.reverse.each do |post| %>
-      <div class="card horizontal valign-wrapper">
-        <div class="card-image hide-on-small-only">
-          <% if post.user.image_url %>
-            <a href="/user-profile/<%= post.user.id %>"><img src="<%= post.user.image_url %>"></a>
-          <% end %>
-        </div>
-        <div class="card-stacked">
-          <div class="card-content">
-            <h3><i class="material-icons post-icon">title :</i><%= post.title %></h3>
-            <h4><i class="material-icons post-icon">account_circle :</i><a class="username-link" href="/user-profile/<%= post.user.id %>"><%= post.user.username %></a></h4>
-            <h5><i class="material-icons post-icon">message :</i><%= post.content %></h5>
-          <% if session[:user_id] == post.user_id %>
-            <h6><i class="material-icons post-icon">close :</i><a class="username-link" href="/delete-post/<%= post.id %>">Delete post</a></h6>
-          <% end %>
+      <div class="row">
+        <div class="col s12 m7" style="width: 100%;">
+          <div class="card horizontal card-holder" >
+            <div class="card-image">
+              <img src="<%= post.user.image_url %>" class="responsive-img">
+            </div>
+            <div class="card-stacked">
+            <div class="card-content">
+            <span class="card-title"><%= post.title %></span>
+              <p><%= post.content %></p>
+            </div>
+            <div class="card-action">
+            <a class="username-link" href="/user-profile/<%= post.user.id %>">@<%= post.user.username %></a>
+            </div>
+            </div>
           </div>
         </div>
       </div>

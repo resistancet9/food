@@ -36,9 +36,7 @@ body {
 
 .card-holder img {
   max-height: 300px !important;
-  max-width: 350px !important;
-  min-height: 300px !important;
-  min-width: 350px !important;
+  object-fit: cover;
 }
 
 .settings-page {

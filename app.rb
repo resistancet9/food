@@ -22,7 +22,7 @@ get "/" do
     @user = User.find(session[:user_id])
     erb :signed_in_homepage
   else
-    erb :signed_out_homepage
+    redirect "/sign-in"
   end
 end
 
